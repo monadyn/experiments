@@ -1,10 +1,10 @@
-#cell 0
-%pylab inline
-
-#cell 1
-%load_ext autoreload
-%autoreload 2
-
+##cell 0
+#%pylab inline
+#
+##cell 1
+#%load_ext autoreload
+#%autoreload 2
+#
 #cell 2
 import numpy
 import pandas as pd
@@ -148,21 +148,21 @@ for epoch in ep:
 
 
 #cell 19
-class LogisticRegression(object):
-    
-    def __init__(self, input, n_in, n_out):
-        self.input = input
-        
-        W_values = 4*numpy.random.uniform(
-                low=-numpy.sqrt(6. / (n_in + n_out)),
-                high=numpy.sqrt(6. / (n_in + n_out)),
-                size=(n_in, n_out)
-        )
-        self.W = theano.shared(value=W_values, name='W', borrow=True)
-
-        b_values = numpy.zeros((n_out,))
-        self.b = theano.shared(value=b_values, name='b', borrow=True)
-           
+#class LogisticRegression(object):
+#    
+#    def __init__(self, input, n_in, n_out):
+#        self.input = input
+#        
+#        W_values = 4*numpy.random.uniform(
+#                low=-numpy.sqrt(6. / (n_in + n_out)),
+#                high=numpy.sqrt(6. / (n_in + n_out)),
+#                size=(n_in, n_out)
+#        )
+#        self.W = theano.shared(value=W_values, name='W', borrow=True)
+#
+#        b_values = numpy.zeros((n_out,))
+#        self.b = theano.shared(value=b_values, name='b', borrow=True)
+#           
 
 #cell 20
 
