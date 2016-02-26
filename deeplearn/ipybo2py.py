@@ -2,8 +2,8 @@
 from IPython.nbformat import current as nbformat
 from IPython.nbconvert import PythonExporter
 
-filepath = 'HW1_T2.ipynb'
-export_path = 'HW1_T2_auto.py'
+filepath = 'Huasong.Shan.HW1.ipynb'#'HW1_T2.ipynb'
+export_path = 'Huasong.Shan.HW1.ipynb.py'
 
 with open(filepath) as fh:
     nb = nbformat.reads_json(fh.read())
